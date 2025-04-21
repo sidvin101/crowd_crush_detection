@@ -45,12 +45,12 @@ class CrowdNet(nn.Module):
             nn.Upsample(size=(1080, 1920), mode='bilinear', align_corners=False) # this is the size of the original image
         )
 
-        def forward(self, x):
-            #Encoder
-            x = self.encoder(x)
-            #Decoder
-            x = self.decoder(x)
-            return x
+    def forward(self, x):
+        #Encoder
+        x = self.encoder(x)
+        #Decoder
+        x = self.decoder(x)
+        return x
 
 # Load the model 
 model = CrowdNet()

@@ -100,7 +100,7 @@ def load_and_extract(image_folder, heatmap_folder, window_size):
 
 def train_and_test_sgd(X_train, y_train, X_test, y_test):
     """
-    This function will train the SVR model on the training data
+    This function will train the SGD model on the training data
     """
     #scale the X_train data
     scaler = StandardScaler()

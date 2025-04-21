@@ -66,6 +66,7 @@ Python script (makeheatmaps.py) that uses the ground truth json file to create a
 
 ## Github Structure
 
+```
 crowd_crush_detection/
 │
 ├── Dataset/ # Folder containing sample image, json, and heatmap sets. It is also premade into train, testing, and validation subfolders as well
@@ -97,6 +98,7 @@ crowd_crush_detection/
 ├── requirements.txt                # Python dependencies
 ├── README.md                       # Project description and usage guide
 └── LICENSE                         # License information
+```
 
 ## Instructions on running it
 

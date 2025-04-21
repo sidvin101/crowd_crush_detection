@@ -45,7 +45,7 @@ class CrowdNet(nn.Module):
         super(CrowdNet, self).__init__()
 
         #We will use a pretrained ResNet18 model, since it is very lightweight
-        base = models
+        base = models.resnet18(pretrained=True) 
 
         #Our model will have two parts, an encoder and a decoder
         # The encoder will be the ResNet18 model, but only the first few layers

@@ -41,7 +41,7 @@ class CrowdNet(nn.Module):
             nn.Conv2d(32, 16, kernel_size=3, padding=1),
             nn.ReLU(inplace=True),
 
-            nn.Conv2d(16, 1, kernel_size=3, padding=1),
+            nn.Conv2d(16, 1, kernel_size=1, padding=1),
             nn.Upsample(size=(1080, 1920), mode='bilinear', align_corners=False) # this is the size of the original image
         )
 

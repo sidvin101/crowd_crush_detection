@@ -22,7 +22,7 @@ def extract_gabor_features(image, window_size):
     gabor_features = []
     for kernel in kernels:
         filtered = cv2.filter2D(image, cv2.CV_8UC3, kernel)
-        gabor_freatures.append(filtered.flatten())
+        gabor_features.append(filtered.flatten())
 
     gabor_image = np.sum(gabor_features, axis=0)
 

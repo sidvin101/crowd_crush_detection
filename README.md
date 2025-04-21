@@ -1,8 +1,8 @@
 # crowd_crush_detection
 A repository to detect and monitor points of potential crowd crush
 
-Link to Demo Video: https://www.youtube.com/watch?v=6tSz3sny-KI&ab_channel=SiddarthVinnakota
-Link to Presentation Slides: https://docs.google.com/presentation/d/1hHDwBKbd7i4YkKZXi6DmN4CpLCe4BC1ywxt9JSCRRyg/edit?usp=sharing
+- Link to Demo Video: https://www.youtube.com/watch?v=6tSz3sny-KI&ab_channel=SiddarthVinnakota
+- Link to Presentation Slides: https://docs.google.com/presentation/d/1hHDwBKbd7i4YkKZXi6DmN4CpLCe4BC1ywxt9JSCRRyg/edit?usp=sharing
 
 ## Problem and Motivation
 Crowding is common amongst large gatherings such as concerts, parties, or other religious events. An unchecked crowd can compress on certain points, leading to panic, injuries, and even death. Current keypoint detection approaches like YOLO are ineffective when dealing with large swaths of people, where the individual points are blended together. Instead, what if we could train the model on crowd and sparsity patterns?

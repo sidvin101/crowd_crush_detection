@@ -26,7 +26,7 @@ Python script (makeheatmaps.py) that uses the ground truth json file to create a
 ## Naive Approach
 - Regardless of the image, randomly places 30 points on a matrix the same size as the image and uses a Gaussian blob to predict a matrix
 - MSE of 0.1168
-- Good for this dataset, but it is not scalable.
+- Good for this dataset, but it is not scalable. Plus, it is more accurate because it is heavily connected to how I acquired the ground truths
 
 ## Machine Learning Approach (SGDRegressor with Local Features)
 - For every image:
@@ -54,7 +54,7 @@ Python script (makeheatmaps.py) that uses the ground truth json file to create a
 | Deep Learning         | 0.0059   |
 
 ## Results and Conclusions
-- The Naive Model is good, yet is not scalable to more points.
+- The Naive Model is good, yet is not scalable to more points. It seems to be more accurate to this dataset, but will struggle more when given more common datasets.
 - The Machine Learning Approach needs more fine-tuning and model-building to achieve a reasonable MSE.
 - The Deep Learning model is the best performing model, and is scalable.
 
